@@ -32,6 +32,12 @@ env/
 data/*.db
 data/*.sqlite
 
+# Data directory (runtime data, logs, configs with sensitive info)
+data/
+
+# Config backups
+config/*.backup.*
+
 # IDE
 .vscode/
 .idea/

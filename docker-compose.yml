@@ -9,6 +9,8 @@ services:
     volumes:
       - ./data:/app/data
       - ./config/setting.toml:/app/config/setting.toml
+      - /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime:ro
     environment:
       - PYTHONUNBUFFERED=1
+      - TZ=Asia/Shanghai
     restart: unless-stopped
